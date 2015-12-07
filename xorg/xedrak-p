@@ -1,0 +1,59 @@
+// Xedrak-P keyboard layout symbols for xkb on X.Org Server 7.x
+// Author: Shawn Badger 2015
+// Credits: Inspired by the Colemak layout
+
+partial alphanumeric_keys
+xkb_symbols "xedrak-p" {
+
+    name[Group1]= "English (Xedrak-P)";
+
+    include "us(basic)"
+
+    // Alphanumeric section
+    key <AE01> {  [        exclam,  1   ] };
+    key <AE02> {  [            at,  2   ] };
+    key <AE03> {  [    numbersign,  3   ] };
+    key <AE04> {  [        dollar,  4   ] };
+    key <AE05> {  [       percent,  5   ] };
+    key <AE06> {  [   asciicircum,  6   ] };
+    key <AE07> {  [     ampersand,  7   ] };
+    key <AE08> {  [      asterisk,  8   ] };
+    key <AE09> {  [     parenleft,  9   ] };
+    key <AE10> {  [    parenright,  0   ] };
+
+    // Alphanumeric section
+    key <AD01> {  [   q,  Q   ] };
+    key <AD02> {  [   w,  W   ] };
+    key <AD03> {  [   f,  F   ] };
+    key <AD04> {  [   g,  G   ] };
+    key <AD05> {  [   b,  B   ] };
+    key <AD06> {  [   j,  J   ] };
+    key <AD07> {  [   m,  M   ] };
+    key <AD08> {  [   u,  U   ] };
+    key <AD09> {  [   y,  Y   ] };
+    key <AD10> {  [   semicolon,  colon   ] };
+
+    key <AC01> {  [   a,  A   ] };
+    key <AC02> {  [   r,  R   ] };
+    key <AC03> {  [   s,  S   ] };
+    key <AC04> {  [   t,  T   ] };
+    key <AC05> {  [   l,  L   ] };
+    key <AC06> {  [   k,  K   ] };
+    key <AC07> {  [   n,  N   ] };
+    key <AC08> {  [   e,  E   ] };
+    key <AC09> {  [   i,  I   ] };
+    key <AC10> {  [   o,  O   ] };
+
+    key <AB01> {  [   z,  Z   ] };
+    key <AB02> {  [   x,  X   ] };
+    key <AB03> {  [   c,  C   ] };
+    key <AB04> {  [   d,  D   ] };
+    key <AB05> {  [   v,  V   ] };
+    key <AB06> {  [   p,  P   ] };
+    key <AB07> {  [   h,  H   ] };
+    // End alphanumeric section
+
+    key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
+
+    include "level3(ralt_switch)"
+};
